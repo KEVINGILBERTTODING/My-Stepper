@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="@dimen/_180sdp"
+            app:lottie_rawRes="@raw/success2"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_height="@dimen/_180sdp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Done"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/purple_500"
+            android:textSize="@dimen/_12sdp"/>
+
+
+
+
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        app:lottie_rawRes="@raw/congrats"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
